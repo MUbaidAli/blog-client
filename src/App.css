@@ -1,0 +1,478 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* height: 20; */
+  line-height: 5rem;
+  text-transform: capitalize;
+}
+
+body {
+  background-color: #111119;
+  /* height: 1000vh; */
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #111119;
+  /* background: radial-gradient(
+    circle,
+    rgba(255, 0, 0, 0.5) 10%,
+    rgba(0, 0, 0, 1) 70%
+  ); */
+}
+
+.hero-sec {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle {
+  position: absolute;
+  margin: 0 auto;
+  /* left: 0%; */
+  top: 150px;
+  background-color: #111119;
+  width: 1050px;
+  height: 1050px;
+  overflow: hidden;
+  border-radius: 50%;
+
+  z-index: 1;
+}
+
+/* nav .active {
+  background: linear-gradient(90deg, #a80f0f 0%, #2f7362 60.43%);
+  color: white;
+} */
+
+/* body {
+  height: 1000px;
+} */
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 -1 24px 14px rgba(0, 170, 255, 0.102),
+      inset 0 -1 24px 14px rgba(0, 170, 255, 0.102);
+  }
+  50% {
+    box-shadow: 0 -1 32px 14px rgba(0, 170, 255, 0.102),
+      inset 0 -1 50px 28px rgba(0, 170, 255, 0.102);
+  }
+  100% {
+    box-shadow: 0 -1 24px 14px rgba(0, 170, 255, 0.102),
+      inset 0 -1 24px 14px rgba(0, 170, 255, 0.102);
+  }
+}
+
+.inner {
+  /* background-color: transparent; */
+
+  /* box-shadow: rgba(0, 170, 255, 0.102) 0px 50px 100px -20px,
+    rgba(0, 170, 255, 0.102) 0px 30px 60px -30px; */
+  box-shadow: 0px -1px 24px 14px rgba(0, 170, 255, 0.102);
+  -webkit-box-shadow: 0px -1px 24px 14px rgba(0, 170, 255, 0.102);
+  -moz-box-shadow: 0px -1px 24px 14px rgba(0, 170, 255, 0.102);
+  /* box-shadow: 0 0 16px rgba(0, 170, 255, 0.102), inset 0 0 16px #00aaff1a; */
+  -webkit-animation: pulse 2s linear 1s infinite;
+}
+
+/*  */
+
+.custom-border::after {
+  content: "";
+  background: url(./src/assets/Vector1.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  /* opacity: 1; */
+  top: -5px;
+  right: -3px;
+  width: 87px;
+  height: 100px;
+  z-index: 50;
+}
+
+.custom-border::before {
+  content: "";
+  background: url(./src/assets/Vector1.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  position: absolute;
+  /* opacity: 1; */
+  bottom: -5px;
+  left: -3px;
+  width: 87px;
+  height: 100px;
+  z-index: 50;
+}
+
+.img.custom-border::before {
+  background: url(./src/assets/Vector1.svg) no-repeat;
+  height: 170px;
+  width: 170px;
+}
+
+.img.custom-border::after {
+  background: url(./src/assets/Vector5.svg) no-repeat;
+  height: 170px;
+  width: 170px;
+}
+/* footer  */
+
+footer {
+  /* background: url("./src/assets/image.svg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  width: 100%;
+  height: 100%;
+}
+
+ul.custom {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  /* width: 240px; */
+  position: relative;
+}
+
+.custom li {
+  /* padding-left: 1em; */
+  margin: 10px 0;
+  font-size: 20px;
+  /* text-indent: -1em; */
+}
+
+.custom li:before {
+  content: "";
+  background: url(./src/assets/hand.svg) no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  /* padding-right: 5px; */
+  /* top: 0; */
+  margin: 0 10px;
+  left: -50px;
+}
+
+.bg {
+  background: url("./src/assets/ellipse 10.svg");
+  /* width: 100%; */
+  /* height: 100vh; */
+  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navBar li {
+  width: 100%;
+  border-bottom: 2px solid white;
+  padding: 10px 10px;
+  /* text-decoration: underline; */
+}
+
+.navBar li:hover {
+  /* background-color: rgb(10, 249, 249); */
+}
+
+/* loader */
+
+/* From Uiverse.io by AbanoubMagdy1 */
+/* .loader {
+  --dim: 3rem;
+  width: var(--dim);
+  height: var(--dim);
+  position: relative;
+  animation: spin988 2s linear infinite;
+}
+
+.loader .circle {
+  --color: #333;
+  --dim: 1.2rem;
+  width: var(--dim);
+  height: var(--dim);
+  background-color: var(--color);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.loader .circle:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.loader .circle:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.loader .circle:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+
+.loader .circle:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes spin988 {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+
+  20%,
+  25% {
+    transform: scale(1.3) rotate(90deg);
+  }
+
+  45%,
+  50% {
+    transform: scale(1) rotate(180deg);
+  }
+
+  70%,
+  75% {
+    transform: scale(1.3) rotate(270deg);
+  }
+
+  95%,
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+} */
+/* new loader */
+
+/* From Uiverse.io by ZacharyCrespin */
+@keyframes square-animation {
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  10.5% {
+    left: 0;
+    top: 0;
+  }
+
+  12.5% {
+    left: 32px;
+    top: 0;
+  }
+
+  23% {
+    left: 32px;
+    top: 0;
+  }
+
+  25% {
+    left: 64px;
+    top: 0;
+  }
+
+  35.5% {
+    left: 64px;
+    top: 0;
+  }
+
+  37.5% {
+    left: 64px;
+    top: 32px;
+  }
+
+  48% {
+    left: 64px;
+    top: 32px;
+  }
+
+  50% {
+    left: 32px;
+    top: 32px;
+  }
+
+  60.5% {
+    left: 32px;
+    top: 32px;
+  }
+
+  62.5% {
+    left: 32px;
+    top: 64px;
+  }
+
+  73% {
+    left: 32px;
+    top: 64px;
+  }
+
+  75% {
+    left: 0;
+    top: 64px;
+  }
+
+  85.5% {
+    left: 0;
+    top: 64px;
+  }
+
+  87.5% {
+    left: 0;
+    top: 32px;
+  }
+
+  98% {
+    left: 0;
+    top: 32px;
+  }
+
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+.loader {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  transform: rotate(45deg);
+}
+
+.loader-square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  margin: 2px;
+  border-radius: 0px;
+  background: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: square-animation 10s ease-in-out infinite both;
+}
+
+.loader-square:nth-of-type(0) {
+  animation-delay: 0s;
+}
+
+.loader-square:nth-of-type(1) {
+  animation-delay: -1.4285714286s;
+}
+
+.loader-square:nth-of-type(2) {
+  animation-delay: -2.8571428571s;
+}
+
+.loader-square:nth-of-type(3) {
+  animation-delay: -4.2857142857s;
+}
+
+.loader-square:nth-of-type(4) {
+  animation-delay: -5.7142857143s;
+}
+
+.loader-square:nth-of-type(5) {
+  animation-delay: -7.1428571429s;
+}
+
+.loader-square:nth-of-type(6) {
+  animation-delay: -8.5714285714s;
+}
+
+.loader-square:nth-of-type(7) {
+  animation-delay: -10s;
+}
+
+/* text Editor */
+
+.editor-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 200px;
+  background: #fff;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.toolbar button {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.toolbar button:hover {
+  background: #0056b3;
+}
+
+/* slider */
+.container__slider {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: black;
+}
+
+.slider__item {
+  box-sizing: border-box;
+  min-width: 100%;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+  height: auto;
+  transform: translateX(0);
+  transition: transform 1s ease;
+}
+
+.slider__item-active-1 {
+  transform: translateX(0);
+}
+
+.slider__item-active-2 {
+  transform: translateX(-100%);
+}
+
+.slider__item-active-3 {
+  transform: translateX(-200%);
+}
+
+.slider__item-active-4 {
+  transform: translateX(-300%);
+}
+
+.star {
+  height: 20px;
+}
+
+/* dashboard menu icon */
