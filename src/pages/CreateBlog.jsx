@@ -6,7 +6,7 @@ import ImageTool from "@editorjs/image";
 import Embed from "@editorjs/embed";
 import CodeTool from "@editorjs/code";
 import axios from "axios";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/authContext.jsx";
 import API from "../utils/axiosInstance";
 
 const CreateBlog = () => {
