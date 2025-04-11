@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/authContext.jsx";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import AdminSearch from "./AdminSearch";
