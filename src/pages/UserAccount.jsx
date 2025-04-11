@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import RegisterAdmin from "../components/RegisterAdmin";
 import UpdateUserData from "../components/UpdateUserData";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/authContext.jsx";
 
 function UserAccount() {
   const { user, isLoading } = useAuth();
