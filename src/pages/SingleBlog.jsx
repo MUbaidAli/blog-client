@@ -8,7 +8,7 @@ import CategoryCard from "../components/CategoryCard";
 import Footer from "../components/Footer";
 import HrLine from "../components/HrLine";
 import Reviews from "./Reviews";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/authContext.jsx";
 import API from "../utils/axiosInstance";
 
 function SingleBlog() {
