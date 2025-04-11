@@ -8,7 +8,7 @@ import Button from "../components/Button";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/authContext.jsx";
 function Login() {
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [error, setError] = useState({});
