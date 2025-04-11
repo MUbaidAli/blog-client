@@ -31,7 +31,7 @@ function PopularPost({ data }) {
       <div className="slider flex sm:justify-between justify-center items-center relative overflow-hidden">
         {/* Left Button */}
         <img
-          src="./src/assets/vector3.svg"
+          src="/public/vector3.svg"
           alt="left button"
           className="cursor-pointer rotate-180 mx-5 hidden sm:block"
           onClick={handleLeft}
@@ -70,7 +70,7 @@ function PopularPost({ data }) {
 
         {/* Right Button */}
         <img
-          src="./src/assets/vector3.svg"
+          src="/public/vector3.svg"
           alt="right button"
           className="mx-5 hidden sm:block cursor-pointer"
           onClick={handleRight}
