@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/authContext.jsx";
 import { useNavigate } from "react-router-dom";
 import Pagination from "../components/Pagination";
 import API from "../utils/axiosInstance";
