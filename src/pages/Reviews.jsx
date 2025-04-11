@@ -3,7 +3,7 @@ import Button from "../components/Button";
 import StarRating from "../components/StarRating";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/authContext.jsx";
 import API from "../utils/axiosInstance";
 
 function Reviews({ blogId, rev }) {
