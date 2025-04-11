@@ -9,7 +9,7 @@ import axios from "axios";
 
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/authContext.jsx";
 import API from "../utils/axiosInstance";
 
 const EditBlog = () => {
