@@ -21,7 +21,7 @@ function CategoryExplorer({ categoryData }) {
                       <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
                         <div className="flex justify-left w-20">
                           <img
-                            src="./src/assets/Vector.svg"
+                            src="/Vector.svg"
                             className="w-32 mb-3"
                           />
                         </div>
