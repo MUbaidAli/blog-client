@@ -261,7 +261,7 @@ function Navbar() {
               "bg-[oklch(0.87 0.01 258.34 / 0.8)]  bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 "
             } fixed z-100 w-full text-white"} md:hidden block `}
           >
-            <ul className="flex flex-col items-center justify-between bg-gray navBar ">
+            <ul className="flex flex-col items-center justify-between bg-black navBar ">
               <li className="mx-5 hover:bg-linear-65  from-red-500 to-pink-800 bg-clip-text hover:text-transparent cursor-pointer">
                 <Link
                   to="/"
