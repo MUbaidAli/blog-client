@@ -263,12 +263,12 @@ function Navbar() {
           >
             <ul className="flex flex-col items-center justify-between bg-gray navBar ">
               <li className="mx-5 hover:bg-linear-65  from-red-500 to-pink-800 bg-clip-text hover:text-transparent cursor-pointer">
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="hover:bg-linear-65  from-red-500 to-pink-800 bg-clip-text hover:text-transparent"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li
                 className="mx-5 mx-5 hover:bg-linear-65  from-red-500 to-pink-800 bg-clip-text hover:text-transparent cursor-pointer"
@@ -279,49 +279,50 @@ function Navbar() {
                   setIsOpen(false);
                 }}
               >
-                <a
+                <Link
+                  
                   href="#"
                   className="hover:bg-linear-65 from-red-500 to-pink-800 bg-clip-text hover:text-transparent"
                 >
                   Categories ▼{" "}
                   {isOpen && (
                     <div className="absolute  flex sm:flex-col flex-wrap  w-100  py-5 bg-white text-black shadow-lg border rounded-lg border-white ">
-                      {categories.map((item, i) => (
+                      {allCategory.map((item, i) => (
                         <Link
                           to={`/category/${item._id}?${item.name}`}
                           key={i}
                           className="border border-red-400  px-3 py-2 w-45 rounded-md my-1 mx-2 hover:bg-red-100 transition"
                         >
-                          {item}
+                          {item.name}
                         </Link>
                       ))}
                     </div>
                   )}{" "}
-                </a>
+                </Link>
               </li>
               <li className="mx-5  hover:bg-linear-65  from-red-500 to-pink-800 bg-clip-text hover:text-transparent cursor-pointer">
-                <a
-                  href="#"
+                <Link
+                  to="/posts"
                   className="hover:bg-linear-65 from-red-500 to-pink-800 bg-clip-text hover:text-transparent"
                 >
                   Latest Posts
-                </a>
+                </Link>
               </li>
               <li className="mx-5 hover:bg-linear-65  from-red-500 to-pink-800 bg-clip-text hover:text-transparent cursor-pointer">
-                <a
-                  href="#"
+                <Link
+                  to="/about"
                   className="hover:bg-linear-65 from-red-500 to-pink-800 bg-clip-text hover:text-transparent"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="mx-5 hover:bg-linear-65  from-red-500 to-pink-800 bg-clip-text hover:text-transparent cursor-pointer">
-                <a
-                  href="#"
+                <Link
+                  to="/contact"
                   className="hover:bg-linear-65 from-red-500 to-pink-800 bg-clip-text hover:text-transparent"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
