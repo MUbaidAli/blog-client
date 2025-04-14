@@ -3,7 +3,7 @@ import Button from "./Button";
 import CategoryCard from "./CategoryCard";
 import axios from "axios";
 import { toast } from "react-toastify";
-
+import API from "../utils/axiosInstance.js"
 function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -29,7 +29,7 @@ function ContactForm() {
       message: formData.message,
     };
 
-    const res = await axios.post("http://localhost:8484/api/contact", data);
+    const res = await API.post("http://localhost:8484/api/contact", data , );
     // console.log(res);
     toast(res.data.message);
   };
@@ -37,7 +37,7 @@ function ContactForm() {
   return (
     <>
       <div className="bg">
-        <div className="mx-auto max-w-7xl md:py-40 ">
+        <div className="mx-auto max-w-7xl md:py-40 px-10 ">
           <div className=" pt-6 md:pt-0  flex flex-col justify-center items-center   ">
             <div className="md:w-250">
               <h1 className="mb-4 text-center  text-gray-900 dark:text-white  text-5xl sm:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#FF4242] to-[#99286C]">
