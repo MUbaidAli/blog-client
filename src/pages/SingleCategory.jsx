@@ -47,6 +47,7 @@ function SingleCategory({ heading }) {
   }
   return (
     <>
+      <div className="background">
       <Navbar />
 
       <div className="bg">
@@ -107,6 +108,7 @@ function SingleCategory({ heading }) {
       </div>
       <HrLine />
       <Footer />
+        </div>
     </>
   );
 }
