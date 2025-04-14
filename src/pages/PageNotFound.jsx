@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 function PageNotFound() {
   return (
     <>
+      <div className="background">
       <Navbar />
 
       <main className="flex items-center justify-center w-full min-h-screen py-8 text-white page md:py-16 ">
@@ -39,6 +40,7 @@ function PageNotFound() {
       </main>
 
       <Footer />
+        </div>
     </>
   );
 }
