@@ -45,6 +45,7 @@ function Categories() {
   }
 
   return (
+    <div className="background">
     <div className="bg">
       <Navbar />
       <section className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-8 py-20">
@@ -92,6 +93,7 @@ function Categories() {
       </section>
       <Footer />
     </div>
+      </div>
   );
 }
 
