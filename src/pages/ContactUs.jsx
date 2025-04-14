@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 function ContactUs() {
   return (
     <>
+      <div className="background">
       <Navbar />
       <HeroSection
         heading={"Let’s Connect – We’re Here to Help!"}
@@ -16,6 +17,7 @@ function ContactUs() {
       />
       <ContactForm />
       <Footer />
+        </div>
     </>
   );
 }
