@@ -34,6 +34,7 @@ function About() {
 
   return (
     <>
+      <div className="background">
       <Navbar />
       <HeroSection
         heading={"Empowering Your Journey to a Healthier Life”"}
@@ -52,6 +53,7 @@ function About() {
       <SubscriptionSection />
       <HrLine width={"4"} />
       <Footer />
+        </div>
     </>
   );
 }
