@@ -481,3 +481,14 @@ ul.custom {
 }
 
 /* dashboard menu icon */
+@media (max-width: 500px) {
+  /* Styles to apply when the screen width is 500px or less */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 3rem;
+  }
+}
