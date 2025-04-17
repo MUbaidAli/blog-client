@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import svg1 from "../assets/vector3.svg";
+import svg1 from "../assets/Vector3.svg";
 
 function PopularPost({ data }) {
   const [counter, setCounter] = useState(0);
