@@ -51,7 +51,7 @@ function SingleCategory({ heading }) {
       <Navbar />
 
       <div className="bg">
-        <div className="mx-auto max-w-7xl px-10">
+        <div className="mx-auto max-w-7xl md:px-10 px-5">
           {/* <h1>Category Page</h1> */}
           {/* {console.log(typeof )} */}
           {/* {console.log(!isLoading && typeof blogData === "string")} */}
