@@ -119,7 +119,7 @@ body {
 }
 
 .img.custom-border::before {
-  background: url(./src/assets/Vector5.svg) no-repeat;
+  background: url(/Vector5.svg) no-repeat;
   height: 170px;
   width: 170px;
 }
