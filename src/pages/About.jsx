@@ -37,7 +37,7 @@ function About() {
       <div className="background">
       <Navbar />
       <HeroSection
-        heading={"Empowering Your Journey to a Healthier Life”"}
+        heading={"Empower Your Journey to a Healthier Life”"}
         text={
           "“Wellness Insight is your trusted source for expert-backed health, fitness, and nutrition tips.”"
         }
