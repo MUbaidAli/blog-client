@@ -1,6 +1,6 @@
 import BorderImage from "./BorderImage";
 import SectionHeading from "./SectionHeading";
-
+import img1 from "../assets/image12.png";
 function AboutSection() {
   return (
     <>
@@ -27,7 +27,7 @@ function AboutSection() {
             </ul>
           </div>
           <div className=" md:w-100 m-10">
-            <BorderImage src={"./src/assets/image12.png"} />
+            <BorderImage src={img1} />
           </div>
           <div className="ml-20">
             <ul className="mx-4 custom flex flex-col">
