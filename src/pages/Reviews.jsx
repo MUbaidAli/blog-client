@@ -185,8 +185,8 @@ function Reviews({ blogId, rev }) {
                 <>
                   <div className="mt-6 text-center">
                     <p
-                      type="button"
-                      className="mb-2 me-2   px-5 py-2.5 text-sm font-medium text-white    "
+                      
+                      className="mb-2   px-2 py-2.5 text-sm font-medium text-white  w-full  "
                     >
                       No Reviews For This Blog Post Be the first one to add a
                       Review
