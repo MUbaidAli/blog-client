@@ -145,7 +145,7 @@ function Reviews({ blogId, rev }) {
               {rev && rev.length > 0 ? (
                 rev.map((item, i) => (
                   <div key={i}>
-                    <div className="w-150 my-6 gap-8 sm:flex sm:items-start md:my-8">
+                    <div className="w-full sm:w-150 my-6 gap-8 sm:flex sm:items-start md:my-8">
                       <div className="gap-3 py-6 sm:flex sm:items-start">
                         <div className="shrink-0 space-y-2 sm:w-48 md:w-72">
                           <div className="flex items-center gap-0.5">
