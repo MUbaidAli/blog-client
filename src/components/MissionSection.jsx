@@ -1,6 +1,6 @@
 import BorderImage from "./BorderImage";
 import SectionHeading from "./SectionHeading";
-
+import img1 from "../assets/image11.png";
 function MissionSection() {
   return (
     <>
@@ -17,7 +17,7 @@ function MissionSection() {
             />
           </div>
           <div className="m-7">
-            <BorderImage src={"../assets/image11.png"} />
+            <BorderImage src={img1} />
           </div>
         </div>
       </div>
