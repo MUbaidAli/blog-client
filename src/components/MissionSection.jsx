@@ -17,7 +17,7 @@ function MissionSection() {
             />
           </div>
           <div className="m-7">
-            <BorderImage src={"./src/assets/image11.png"} />
+            <BorderImage src={"../assets/image11.png"} />
           </div>
         </div>
       </div>
