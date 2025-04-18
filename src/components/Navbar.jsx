@@ -286,7 +286,7 @@ function Navbar() {
                 >
                   Categories ▼{" "}
                   {isOpen && (
-                    <div className="absolute  flex sm:flex-col flex-wrap  w-100  py-5 bg-white text-black shadow-lg border rounded-lg border-white ">
+                    <div className="relative  flex sm:flex-col flex-wrap  sm:w-80  py-5 bg-white text-black shadow-lg border rounded-lg border-white ">
                       {allCategory.map((item, i) => (
                         <Link
                           to={`/category/${item._id}?${item.name}`}
