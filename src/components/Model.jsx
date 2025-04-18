@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import LatestBlog from "./LatestBlog";
 import SearchResults from "./SearchResults";
+import API from "../utils/axiosInstance";
 
 function Model({ children, modelOpener }) {
   const [query, setQuery] = useState("");
@@ -19,10 +20,9 @@ function Model({ children, modelOpener }) {
     }
 
     async function getSearchResult() {
-      const res = await axios.get(
-        `http://localhost:8484/api/blogs/search?query=${query}`,
-        { withCredentials: true }
-      );
+      const res = await API.get(`/blogs/search?query=${query}`, {
+        withCredentials: true,
+      });
       // console.log(res);
       setResult(res.data);
     }
