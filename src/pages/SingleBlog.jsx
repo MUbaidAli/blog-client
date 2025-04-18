@@ -254,7 +254,7 @@ function SingleBlog() {
   // console.log(post.content);
   return (
     <>
-      <div className="background">
+      
       <div className="bg-[#111119]">
         <Navbar />
       </div>
@@ -332,7 +332,7 @@ function SingleBlog() {
           <Footer />
         </>
       )}
-        </div>
+        
       
     </>
   );
