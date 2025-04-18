@@ -20,7 +20,7 @@ function CategoryExplorer({ categoryData }) {
                     <div className="p-4 md:w-80 sm:w-60 my-5 border w-full  md:mx-5 xl:w-70 rounded-md  custom-border relative cursor-pointer ">
                       <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
                         <div className="flex justify-left w-20">
-                          <i class="fa-solid fa-icons text-white"></i>
+                          <i class="fa-solid fa-icons text-white text-3xl"></i>
 {/*                           <img
                             src="/public/Vector.svg"
                             className="w-32 mb-3"
