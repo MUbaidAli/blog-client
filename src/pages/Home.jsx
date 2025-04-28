@@ -27,7 +27,7 @@ function Home() {
         });
         // console.log(import.meta.env.VITE_API_BASE_URL);
         // console.log(API.defaults.baseURL);
-        console.log(res, "ressssss");
+        // console.log(res, "ressssss");
         setHomeData(res.data);
       } catch (error) {
         console.log(error);
