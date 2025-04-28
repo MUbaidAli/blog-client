@@ -34,6 +34,22 @@ function Navbar() {
   const [allCategory, setAllCategory] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isDropDown) {
+        setIsDropDown(false); // Close the menu when scrolling
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isDropDown]);
+  
   async function fetchCategories() {
     setIsLoading(true);
 
